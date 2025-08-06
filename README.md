@@ -37,6 +37,12 @@ npm start
 Aplikacja będzie dostępna pod adresem `http://localhost:3000`
 Backend działa na adresie `http://localhost:5000`
 
+Domyślnie panel administracyjny dostępny jest po zalogowaniu się na konto:
+
+email: admin@admin.pl
+
+hasło: admin
+
 ## Uwaga
 
 Projekt demonstracyjny, bez integracji z systemem płatności i bez zabezpieczeń na poziomie produkcyjnym.
