@@ -1,0 +1,108 @@
+.orders-container {
+    position: absolute;
+    left: 50%; /* Przesuwa kontener na 50% szerokoœci ekranu */
+    transform: translate(-50%, 0%); /* Dokonuje przesuniêcia o 50% jego szerokoœci i wysokoœci, aby idealnie wyœrodkowaæ */
+    width: 1200px; /* Mo¿esz dostosowaæ szerokoœæ, jeœli chcesz */
+    height: auto; /* Mo¿esz dostosowaæ wysokoœæ, jeœli chcesz */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 kolumny o równej szerokoœci */
+    gap: 20px;
+}
+
+
+.pusty {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Montserrat;
+    margin: 20px 20px 0px 20px;
+    position: sticky;
+    top: 20px; /* Adjust this value as needed to set the distance from the top */
+    max-height: calc(100vh - 60px); /* Adjust based on your header size */
+}
+
+    .orders-container h2 {
+        font-size: 2rem;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .orders-container p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+.order-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+    .order-item h3 {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+    .order-item p {
+        margin: 0.3rem 0;
+        font-size: 0.9rem;
+    }
+
+.order-products {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.order-product {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 0.5rem;
+    flex: 1 1 calc(50% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+    .order-product img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .order-product div {
+        flex-grow: 1;
+    }
+
+    .order-product p {
+        margin: 0.2rem 0;
+        font-size: 0.85rem;
+        color: #555;
+    }
+
+@media (max-width: 768px) {
+    .order-products {
+        flex-direction: column;
+    }
+
+    .order-product {
+        flex: 1 1 100%;
+    }
+
+    .orders-container {
+        padding: 1rem;
+    }
+}
